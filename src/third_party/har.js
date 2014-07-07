@@ -84,8 +84,8 @@ exports.createHar = function (page, resources) {
                     bodySize: -1
                 },
                 response: {
-                    status: error ? null : endReply.status,
-                    statusText: error ? error.errorString : endReply.statusText,
+                    status: endReply.status,
+                    statusText: endReply.statusText,
                     httpVersion: "HTTP/1.1",
                     cookies: [],
                     headers: endReply.headers,
